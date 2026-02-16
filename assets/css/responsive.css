@@ -1,0 +1,25 @@
+/************************************** 
+* >>> Mobile Screen 
+***************************************/
+
+@media (max-width: 580px) {
+    .header-row .logo img {
+        max-width: 125px;
+    }
+
+    .header-row .menu {
+        gap: 0.125rem;
+    }
+
+    .header-row :where(.menu__icon, .menu__close) {
+        max-width: 50px;
+    }
+}
+
+/************************************** 
+* >>> Tablet Screen 
+***************************************/
+
+@media only screen and (min-width: 581px) and (max-width: 900px) {
+    
+}
