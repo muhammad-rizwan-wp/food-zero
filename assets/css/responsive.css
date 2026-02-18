@@ -41,6 +41,7 @@
 
     .hero .icon-wrapper {
         max-width: 100%;
+        gap: 0.5rem;
     }
 
     .icons {
@@ -58,7 +59,7 @@
     }
 
     .hero .icon-wrapper img {
-        width: 120px;
+        width: 110px;
     }
 
     /* Hero Inner Section */
@@ -88,12 +89,12 @@
         row-gap: 20px;
     }
 
-    :where(.menu-item) .menu-details h3 {
+    :where(.menu-item, .single__item) .menu-details h3 {
         font-size: 25px;
         line-height: 35px;
     }
 
-    :where(.menu-item) .price p {
+    :where(.menu-item, .single__item) .price p {
         font-size: 20px;
     }
 
@@ -125,6 +126,70 @@
 
     .cta .inner-column img {
         max-width: 160px;
+    }
+
+    /* Reservation */
+
+    .reservation {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .form__container {
+        grid-template-columns: none;
+        column-gap: 0;
+        row-gap: 20px;
+    }
+
+    /* Footer */
+
+    footer a {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+
+    .footer-top> :nth-child(3) {
+        grid-column: 1 / -1;
+    }
+
+    footer .logo-column img {
+        max-width: 100px;
+    }
+
+    .footer-top {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .bottom-footer .left p {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .social-icons img {
+        width: 25px;
+        height: 25px;
+    }
+
+    /* Menu Pages */
+    section.menu-hero {
+        min-height: 350px;
+    }
+
+    .two__columns-menu {
+        grid-template-columns: none;
+        column-gap: 0px;
+        row-gap: 20px;
+    }
+
+    :where(.single__item) .menu-details {
+        padding-right: 0;
     }
 }
 

@@ -64,7 +64,7 @@ p {
 }
 
 /* General */
-:where(.our-menu, .cta, .blog-sec) {
+:where(.our-menu, .cta, .blog-sec, .menu-content) {
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -438,4 +438,215 @@ section.our-menu::after {
 
 .reservation .content {
     text-align: center;
+}
+
+.quick_reservation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.form__container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+
+.quick_reservation .field-box {
+    overflow: hidden;
+    width: 100%;
+}
+
+.quick_reservation :where(input, select) {
+    width: -webkit-fill-available;
+    max-width: inherit;
+    background-color: transparent;
+    border: 1px solid var(--deep-forest-green);
+    padding: 10px;
+    font-family: var(--body-font);
+    font-size: 17px;
+}
+
+.quick_reservation button[type="submit"] {
+    background-color: var(--deep-forest-green);
+    font-family: var(--heading-font);
+    color: var(--pure-white);
+    padding: 10px 20px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+    background: var(--deep-forest-green);
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    column-gap: 40px;
+}
+
+.footer-top {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+footer .logo-column img {
+    max-width: 140px;
+}
+
+footer h4 {
+    font-family: var(--heading-font);
+    color: var(--pure-white);
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+footer a {
+    font-family: var(--body-font);
+    color: var(--pure-white);
+    font-size: 17px;
+}
+
+footer .form-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+footer .field-box {
+    overflow: hidden;
+}
+
+footer .form-container input[type="email"] {
+    width: -webkit-fill-available;
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 1px solid var(--pure-white);
+    font-family: var(--body-font);
+    font-size: 17px;
+    color: var(--pure-white);
+}
+
+footer .form-container input[type="email"]:focus {
+    outline: 1px solid var(--pure-white);
+}
+
+footer .form-container button[type="submit"] {
+    background: var(--pure-white);
+    outline: none;
+    box-shadow: none;
+    border: 1px solid var(--pure-white);
+    font-family: var(--heading-font);
+    font-size: 17px;
+    cursor: pointer;
+    color: var(--deep-forest-green);
+}
+
+footer .newsletter-form p {
+    font-family: var(--heading-font);
+    color: var(--pure-white);
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.footer-divider {
+    border: 1px dashed var(--pure-white);
+}
+
+.bottom-footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.bottom-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.bottom-footer .left p {
+    margin: 0;
+    color: var(--pure-white);
+}
+
+.social-icons {
+    display: flex;
+    align-items: anchor-center;
+    justify-content: end;
+    gap: 1rem;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+/* Menu Pages */
+
+section.menu-hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url(../images/menu-hero-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.menu-hero :where(.section-wrapper, .content) {
+    width: 100%;
+}
+
+.menu-hero :where(h1, p) {
+    color: var(--pure-white);
+}
+
+.title_box {
+    padding-bottom: 30px;
+}
+
+.title_box.center {
+    text-align: center;
+}
+
+.two__columns-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+.image-box img {
+    width: 100%;
+}
+
+:where(.single__item) .menu-details {
+    padding-right: 20%;
+}
+
+:where(.single__item) .price p {
+    text-align: right;
+    font-family: var(--heading-font);
+    font-size: 30px;
+    line-height: 1;
+}
+
+:where(.single__item) span.item-divider {
+    display: block;
+    border-bottom: 2px dashed;
+    margin-bottom: 20px;
+}
+
+.menu-content .content-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
