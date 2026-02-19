@@ -650,3 +650,48 @@ section.menu-hero {
     flex-direction: column;
     gap: 30px;
 }
+
+:where(.starter, .drinks-pasteries) {
+    position: relative;
+}
+
+.starter:before {
+    content: "";
+    width: 250px;
+    height: 200px;
+    background-image: url(./../images/starter-background-icon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: absolute;
+    top: 0;
+    left: 60%;
+    transform: translateX(-30%);
+}
+
+.drinks-pasteries:before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-image: url(./../images/drinks-background-icon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: absolute;
+    top: 0;
+}
+
+.drinks-pasteries:before {
+    content: "";
+    width: 150px;
+    height: 180px;
+    background-image: url(./../images/drinks-background-icon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+

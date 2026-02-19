@@ -191,6 +191,14 @@
     :where(.single__item) .menu-details {
         padding-right: 0;
     }
+
+    .starter:before {
+        width: 150px;
+        height: 120px;
+        transform: translateX(0%);
+    }
+
+
 }
 
 /************************************** 
