@@ -695,3 +695,108 @@ section.menu-hero {
     transform: translateX(-50%);
 }
 
+/* About */
+
+section.hero.contact {
+    background-color: transparent;
+    background-image: url(./../images/contact-hero-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+:where(.contact) .section-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10rem;
+}
+
+:where(.contact) .opentime {
+    min-width: 600px;
+    margin-left: auto;
+}
+
+:where(.hero) .title-header {
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted var(--pure-white);
+}
+
+:where(.hero) .title-header p {
+    margin-bottom: 0;
+    font-size: 16px;
+    color: var(--pure-white);
+}
+
+:where(.hero) .title-header h6 {
+    font-family: var(--heading-font);
+    font-size: 22px;
+    color: var(--pure-white);
+}
+
+:where(.hero) .details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.hero .details :where(span, p) {
+    color: var(--pure-white);
+}
+
+.contact__icon-sec {
+    padding-top: 150px;
+    position: relative;
+}
+
+.contact__icon-sec:before {
+    content: "";
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 176px;
+    background-image: url(./../images/contact-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.location {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.two__col-temp .img__col img {
+    width: 100%;
+}
+
+.two__col-temp {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 40px;
+}
+
+:where(.contact__icon-sec, .location) .two__col-temp .content :where(p, a) {
+    font-family: var(--heading-font);
+    font-size: 20px;
+    line-height: 30px;
+}
+
+:where(.contact__icon-sec, .location) .two__col-temp .content p {
+    color: var(--deep-forest-green);
+}
+
+:where(.contact__icon-sec, .location) .two__col-temp .content a {
+    color: var(--golden-olive);
+}
+
+:where(.contact__icon-sec, .location) .two__col-temp .content a:hover {
+    border-bottom: 2px solid var(--golden-olive);
+}

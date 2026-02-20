@@ -199,6 +199,28 @@
     }
 
 
+    :where(section.hero.contact) .section-wrapper {
+        min-height: 350px;
+        gap: 2rem;
+    }
+
+    :where(.contact) .opentime {
+        min-width: 100%;
+    }
+
+    .two__col-temp {
+        grid-template-columns: none;
+        row-gap: 40px;
+    }
+
+    .contact__icon-sec {
+        padding-top: 50px;
+    }
+
+    .contact__icon-sec:before {
+        display: none;
+    }
+
 }
 
 /************************************** 
