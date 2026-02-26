@@ -800,3 +800,108 @@ section.hero.contact {
 :where(.contact__icon-sec, .location) .two__col-temp .content a:hover {
     border-bottom: 2px solid var(--golden-olive);
 }
+
+/* About */
+section.hero.about {
+    background-image: url(./../images/about-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+:where(.about) .section-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 500px;
+}
+
+section.story {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+section.story::before {
+    content: "";
+    width: 248px;
+    height: 210px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(./../images/about-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.team {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.team_memeber .intro h4 {
+    font-family: var(--heading-font);
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.team_memeber {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+}
+
+.team_memeber .intro {
+    text-align: center;
+}
+
+.team_memeber .intro img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.team_memeber .body-txt.right_side {
+    text-align: right;
+}
+
+.team_memeber .body-txt {
+    max-width: 400px;
+}
+
+.team_memeber .body-txt p {
+    font-size: 17px;
+    text-align: left;
+}
+
+section.process {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.process .section-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+:where(.process) .two__col-temp .content {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+:where(.process) .two__col-temp h3 {
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.two__col-temp.inline .left .content {
+    margin-bottom: 50px;
+}
+
+.two__col-temp.inline .right .content {
+    margin-top: 50px;
+}

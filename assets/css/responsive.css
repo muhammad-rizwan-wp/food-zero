@@ -221,6 +221,43 @@
         display: none;
     }
 
+    /* About */
+    section.story {
+        padding-top: 50px;
+    }
+
+    section.story::before {
+        width: 150px;
+        height: 127px;
+        top: 0px;
+        left: auto;
+        right: 0;
+        transform: translateX(0);
+    }
+
+    :where(.process) .two__col-temp .content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .team_memeber {
+        gap: 2rem;
+    }
+
+    .team_memeber.member-2 {
+        flex-direction: column-reverse;
+    }
+
+    .two__col-temp.inline .left {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    section.team {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
 
 /************************************** 
