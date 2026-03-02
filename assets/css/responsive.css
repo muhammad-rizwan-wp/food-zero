@@ -258,6 +258,28 @@
         padding-top: 0;
         padding-bottom: 0;
     }
+
+    /* Single Blog */
+    .blog-hero>.section-wrapper {
+        min-height: auto;
+    }
+
+    .author-dtails img {
+        max-width: 80px;
+    }
+
+    .author-content ul {
+        gap: 0.5rem;
+    }
+
+    :where(.blog-content) .tags {
+        flex-wrap: wrap;
+    }
+
+    :where(.blog-content) .content {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 }
 
 /************************************** 
